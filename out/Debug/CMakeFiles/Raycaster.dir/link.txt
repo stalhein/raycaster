@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/Raycaster.dir/link.d CMakeFiles/Raycaster.dir/src/main.c.o -o Raycaster  -Wl,-rpath,/home/twhite/Projects/raycaster/out/Debug/_deps/sdl2-build _deps/sdl2-build/libSDL2-2.0d.so.0.3000.0 _deps/sdl2-build/libSDL2maind.a -lm

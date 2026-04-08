@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/twhite/Projects/raycaster/build/cmake_install.cmake",
+		"/home/twhite/Projects/raycaster/build/_deps/sdl2-build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

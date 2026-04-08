@@ -1,0 +1,71 @@
+{
+	"abstract" : true,
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"find_package",
+			"sdlFindALSA",
+			"CheckALSA"
+		],
+		"files" : 
+		[
+			"/usr/share/cmake/Modules/FindALSA.cmake",
+			"out/Debug/_deps/sdl2-src/cmake/sdlfind.cmake",
+			"out/Debug/_deps/sdl2-src/cmake/sdlchecks.cmake",
+			"out/Debug/_deps/sdl2-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 1494,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 100,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 3,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 106,
+				"parent" : 4
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "ALSA::ALSA::@45bd952f1071c035638d",
+	"imported" : true,
+	"local" : true,
+	"name" : "ALSA::ALSA",
+	"paths" : 
+	{
+		"build" : "_deps/sdl2-build",
+		"source" : "out/Debug/_deps/sdl2-src"
+	},
+	"sources" : [],
+	"type" : "UNKNOWN_LIBRARY"
+}
