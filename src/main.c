@@ -39,7 +39,7 @@ int main() {
         (float)(now - last) * 1000.f / SDL_GetPerformanceFrequency() * 0.001f;
     last = now;
 
-    printf("FPS: %f\n", 1000/deltaTime);
+    //printf("FPS: %f\n", 1000/deltaTime);
 
     while (SDL_PollEvent(&event)) {
       if (event.type == SDL_QUIT) {
