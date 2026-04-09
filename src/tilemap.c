@@ -1,12 +1,30 @@
 #include "tilemap.h"
 
-const uint8_t TILE_MAP []= {
-  1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0,
-  1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0,
-  0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+Tilemap *tilemap_create(const char* path) {
+  FILE *f = fopen(path, "rb");
+  if (!f) {
+    perror("Failed to open file.");
+    return NULL;
+  }
 
-Hit raycast(float startX,
-            float startY, float directionX, float directionY) {
+  int width, height;
+  fread(&width, sizeof(int), 1, f);
+  fread(&height, sizeof(int), 1, f);
+
+  Tilemap *tilemap = malloc(sizeof(Tilemap));
+
+  tilemap->map = malloc(width * height);
+  fread(tilemap->map, sizeof(uint8_t), width*height, f);
+
+  fclose(f);
+  tilemap->width = width;
+  tilemap->height = height;
+
+  return tilemap;
+}
+
+Hit raycast(Tilemap *t, float startX, float startY, float directionX,
+            float directionY) {
   float posX = startX / TILE_SIZE;
   float posY = startY / TILE_SIZE;
 
@@ -49,11 +67,11 @@ Hit raycast(float startX,
       side = 1;
     }
 
-    if (tileX < 0 || tileX >= MAP_SIZE || tileY < 0 || tileY >= MAP_SIZE) {
+    if (tileX < 0 || tileX >= t->width || tileY < 0 || tileY >= t->height) {
       break;
     }
 
-    if (TILE_MAP[tileY * MAP_SIZE + tileX] > 0) {
+    if (t->map[tileY * t->width + tileX] > 0) {
       hit = 1;
     }
   }

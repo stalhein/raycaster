@@ -8,12 +8,14 @@
 
 #include <SDL2/SDL.h>
 
+#include "tilemap.h"
+
 typedef struct {
   float x, y;
   float vx, vy;
   float angle;
 } Player;
 
-void player_update(Player* p, float deltaTime);
+void player_update(Player* p, float deltaTime, Tilemap *t);
 
 #endif

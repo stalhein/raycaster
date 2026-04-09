@@ -26,6 +26,8 @@ int main() {
 
   Player player = {100.f, 100.f, 0.f, 0.f, 0.f};
 
+  Tilemap *tilemap = tilemap_create("worlds/1.wld");
+
   // Main loop
   SDL_Event event;
   Uint64 last = SDL_GetPerformanceCounter();
@@ -36,6 +38,8 @@ int main() {
     deltaTime =
         (float)(now - last) * 1000.f / SDL_GetPerformanceFrequency() * 0.001f;
     last = now;
+
+    printf("FPS: %f\n", 1000/deltaTime);
 
     while (SDL_PollEvent(&event)) {
       if (event.type == SDL_QUIT) {
@@ -52,7 +56,7 @@ int main() {
       }
     }
 
-    player_update(&player, deltaTime);
+    player_update(&player, deltaTime, tilemap);
 
     renderer_clear(renderer);
 
@@ -69,7 +73,7 @@ int main() {
 
     const int horizon = SCR_HEIGHT / 2;
     for (int y = horizon + 1; y < SCR_HEIGHT; ++y) {
-      float distance = (float)(horizon) / (float)(y - horizon);
+      float distance = (float)SCR_HEIGHT / (2.f * y - SCR_HEIGHT);
 
       distance *= TILE_SIZE;
 
@@ -97,13 +101,23 @@ int main() {
         textureX %= floorTexture->width;
         textureY %= floorTexture->height;
 
-        renderer->buffer[y * SCR_WIDTH + x] =
-            floorTexture->texture[textureY * floorTexture->width + textureX];
+        float shade = 1.f / (1.f+distance * 0.007f);
+        Uint32 colour = floorTexture->texture[textureY * floorTexture->width + textureX];
+        Uint8 cr = ((colour >> 16) & 0xFF) * shade;
+        Uint8 cg = ((colour >> 8) & 0xFF) * shade;
+        Uint8 cb = (colour & 0xFF) * shade;
+        colour = (cr << 16) | (cg << 8) | cb;
+
+        renderer->buffer[y * SCR_WIDTH + x] = colour;
 
         int ceilingY = SCR_HEIGHT - y-1;
 
-        renderer->buffer[ceilingY * SCR_WIDTH + x] =
-            ceilingTexture->texture[textureY * floorTexture->width + textureX];
+        colour = ceilingTexture->texture[textureY * ceilingTexture->width + textureX];
+        cr = ((colour >> 16) & 0xFF) * shade;
+        cg = ((colour >> 8) & 0xFF) * shade;
+        cb = (colour & 0xFF) * shade;
+        colour = (cr << 16) | (cg << 8) | cb;
+        renderer->buffer[ceilingY * SCR_WIDTH + x] = colour;
 
         floorX += sX;
         floorY += sY;
@@ -115,7 +129,7 @@ int main() {
       float x = 2.f * i / (float)SCR_WIDTH - 1.f;
       float dx = dirX + planeX * x;
       float dy = dirY + planeY * x;
-      Hit hit = raycast(player.x, player.y, dx, dy);
+      Hit hit = raycast(tilemap, player.x, player.y, dx, dy);
       renderer_draw_column(renderer, i, hit.distance, hit.wallDist,
                            wallTexture, hit.side);
     }
