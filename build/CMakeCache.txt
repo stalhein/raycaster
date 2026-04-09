@@ -43,7 +43,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -69,7 +69,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -1639,7 +1639,7 @@ PKG_KMSDRM_gbm_INCLUDEDIR:INTERNAL=/usr/include
 PKG_KMSDRM_gbm_LIBDIR:INTERNAL=/usr/lib
 PKG_KMSDRM_gbm_MODULE_NAME:INTERNAL=gbm
 PKG_KMSDRM_gbm_PREFIX:INTERNAL=/usr
-PKG_KMSDRM_gbm_VERSION:INTERNAL=26.0.3-arch1.1
+PKG_KMSDRM_gbm_VERSION:INTERNAL=26.0.4-arch1.1
 PKG_KMSDRM_libdrm_INCLUDEDIR:INTERNAL=/usr/include
 PKG_KMSDRM_libdrm_LIBDIR:INTERNAL=/usr/lib
 PKG_KMSDRM_libdrm_MODULE_NAME:INTERNAL=libdrm

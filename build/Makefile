@@ -244,6 +244,78 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/player.o: src/player.c.o
+.PHONY : src/player.o
+
+# target to build an object file
+src/player.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/player.c.o
+.PHONY : src/player.c.o
+
+src/player.i: src/player.c.i
+.PHONY : src/player.i
+
+# target to preprocess a source file
+src/player.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/player.c.i
+.PHONY : src/player.c.i
+
+src/player.s: src/player.c.s
+.PHONY : src/player.s
+
+# target to generate assembly for a file
+src/player.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/player.c.s
+.PHONY : src/player.c.s
+
+src/renderer.o: src/renderer.c.o
+.PHONY : src/renderer.o
+
+# target to build an object file
+src/renderer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/renderer.c.o
+.PHONY : src/renderer.c.o
+
+src/renderer.i: src/renderer.c.i
+.PHONY : src/renderer.i
+
+# target to preprocess a source file
+src/renderer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/renderer.c.i
+.PHONY : src/renderer.c.i
+
+src/renderer.s: src/renderer.c.s
+.PHONY : src/renderer.s
+
+# target to generate assembly for a file
+src/renderer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/renderer.c.s
+.PHONY : src/renderer.c.s
+
+src/tilemap.o: src/tilemap.c.o
+.PHONY : src/tilemap.o
+
+# target to build an object file
+src/tilemap.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/tilemap.c.o
+.PHONY : src/tilemap.c.o
+
+src/tilemap.i: src/tilemap.c.i
+.PHONY : src/tilemap.i
+
+# target to preprocess a source file
+src/tilemap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/tilemap.c.i
+.PHONY : src/tilemap.c.i
+
+src/tilemap.s: src/tilemap.c.s
+.PHONY : src/tilemap.s
+
+# target to generate assembly for a file
+src/tilemap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/tilemap.c.s
+.PHONY : src/tilemap.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -263,6 +335,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/player.o"
+	@echo "... src/player.i"
+	@echo "... src/player.s"
+	@echo "... src/renderer.o"
+	@echo "... src/renderer.i"
+	@echo "... src/renderer.s"
+	@echo "... src/tilemap.o"
+	@echo "... src/tilemap.i"
+	@echo "... src/tilemap.s"
 .PHONY : help
 
 

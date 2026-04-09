@@ -2,6 +2,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/Raycaster.dir/link.d"
   "CMakeFiles/Raycaster.dir/src/main.c.o"
   "CMakeFiles/Raycaster.dir/src/main.c.o.d"
+  "CMakeFiles/Raycaster.dir/src/player.c.o"
+  "CMakeFiles/Raycaster.dir/src/player.c.o.d"
+  "CMakeFiles/Raycaster.dir/src/renderer.c.o"
+  "CMakeFiles/Raycaster.dir/src/renderer.c.o.d"
+  "CMakeFiles/Raycaster.dir/src/tilemap.c.o"
+  "CMakeFiles/Raycaster.dir/src/tilemap.c.o.d"
   "Raycaster"
   "Raycaster.pdb"
 )

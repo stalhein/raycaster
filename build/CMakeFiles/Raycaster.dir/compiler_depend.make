@@ -52,6 +52,9 @@ CMakeFiles/Raycaster.dir/src/main.c.o: /home/twhite/Projects/raycaster/src/main.
   _deps/sdl2-build/include/SDL2/SDL_video.h \
   _deps/sdl2-build/include/SDL2/begin_code.h \
   _deps/sdl2-build/include/SDL2/close_code.h \
+  /home/twhite/Projects/raycaster/include/player.h \
+  /home/twhite/Projects/raycaster/include/renderer.h \
+  /home/twhite/Projects/raycaster/include/tilemap.h \
   /usr/include/alloca.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
@@ -247,6 +250,547 @@ CMakeFiles/Raycaster.dir/src/main.c.o: /home/twhite/Projects/raycaster/src/main.
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsavesintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xtestintrin.h
 
+CMakeFiles/Raycaster.dir/src/player.c.o: /home/twhite/Projects/raycaster/src/player.c \
+  _deps/sdl2-build/include-config-/SDL2/SDL_config.h \
+  _deps/sdl2-build/include/SDL2/SDL.h \
+  _deps/sdl2-build/include/SDL2/SDL_assert.h \
+  _deps/sdl2-build/include/SDL2/SDL_atomic.h \
+  _deps/sdl2-build/include/SDL2/SDL_audio.h \
+  _deps/sdl2-build/include/SDL2/SDL_blendmode.h \
+  _deps/sdl2-build/include/SDL2/SDL_clipboard.h \
+  _deps/sdl2-build/include/SDL2/SDL_cpuinfo.h \
+  _deps/sdl2-build/include/SDL2/SDL_endian.h \
+  _deps/sdl2-build/include/SDL2/SDL_error.h \
+  _deps/sdl2-build/include/SDL2/SDL_events.h \
+  _deps/sdl2-build/include/SDL2/SDL_filesystem.h \
+  _deps/sdl2-build/include/SDL2/SDL_gamecontroller.h \
+  _deps/sdl2-build/include/SDL2/SDL_gesture.h \
+  _deps/sdl2-build/include/SDL2/SDL_guid.h \
+  _deps/sdl2-build/include/SDL2/SDL_haptic.h \
+  _deps/sdl2-build/include/SDL2/SDL_hidapi.h \
+  _deps/sdl2-build/include/SDL2/SDL_hints.h \
+  _deps/sdl2-build/include/SDL2/SDL_joystick.h \
+  _deps/sdl2-build/include/SDL2/SDL_keyboard.h \
+  _deps/sdl2-build/include/SDL2/SDL_keycode.h \
+  _deps/sdl2-build/include/SDL2/SDL_loadso.h \
+  _deps/sdl2-build/include/SDL2/SDL_locale.h \
+  _deps/sdl2-build/include/SDL2/SDL_log.h \
+  _deps/sdl2-build/include/SDL2/SDL_main.h \
+  _deps/sdl2-build/include/SDL2/SDL_messagebox.h \
+  _deps/sdl2-build/include/SDL2/SDL_metal.h \
+  _deps/sdl2-build/include/SDL2/SDL_misc.h \
+  _deps/sdl2-build/include/SDL2/SDL_mouse.h \
+  _deps/sdl2-build/include/SDL2/SDL_mutex.h \
+  _deps/sdl2-build/include/SDL2/SDL_pixels.h \
+  _deps/sdl2-build/include/SDL2/SDL_platform.h \
+  _deps/sdl2-build/include/SDL2/SDL_power.h \
+  _deps/sdl2-build/include/SDL2/SDL_quit.h \
+  _deps/sdl2-build/include/SDL2/SDL_rect.h \
+  _deps/sdl2-build/include/SDL2/SDL_render.h \
+  _deps/sdl2-build/include/SDL2/SDL_rwops.h \
+  _deps/sdl2-build/include/SDL2/SDL_scancode.h \
+  _deps/sdl2-build/include/SDL2/SDL_sensor.h \
+  _deps/sdl2-build/include/SDL2/SDL_shape.h \
+  _deps/sdl2-build/include/SDL2/SDL_stdinc.h \
+  _deps/sdl2-build/include/SDL2/SDL_surface.h \
+  _deps/sdl2-build/include/SDL2/SDL_system.h \
+  _deps/sdl2-build/include/SDL2/SDL_thread.h \
+  _deps/sdl2-build/include/SDL2/SDL_timer.h \
+  _deps/sdl2-build/include/SDL2/SDL_touch.h \
+  _deps/sdl2-build/include/SDL2/SDL_version.h \
+  _deps/sdl2-build/include/SDL2/SDL_video.h \
+  _deps/sdl2-build/include/SDL2/begin_code.h \
+  _deps/sdl2-build/include/SDL2/close_code.h \
+  /home/twhite/Projects/raycaster/include/player.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/once_flag.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/inttypes.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/adxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxavx512intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxbf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxcomplexintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxfp16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxfp8intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxint8intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxmovrsintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtf32intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtileintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtransposeintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512bf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512convertintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512mediaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512minmaxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512satcvtintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2bf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2convertintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2copyintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2mediaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2minmaxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2satcvtintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx2intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bitalgintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bitalgvlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bwintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512cdintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512dqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512ifmaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512ifmavlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmiintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmivlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlbwintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vldqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vnniintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vnnivlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vp2intersectintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vp2intersectvlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vpopcntdqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vpopcntdqvlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxifmaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxneconvertintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniint16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniint8intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/bmi2intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/bmiintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cetintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cldemoteintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clflushoptintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clwbintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clzerointrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cmpccxaddintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/enqcmdintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/f16cintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fmaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fxsrintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/gfniintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/hresetintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/ia32intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/immintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/keylockerintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/lwpintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/lzcntintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movdirintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movrsintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pconfigintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pkuintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/popcntintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/prfchiintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/prfchwintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/raointintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/rdseedintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/rtmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/serializeintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sgxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sha512intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/shaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sm3intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sm4intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/smmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tbmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tsxldtrkintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/uintrintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/usermsrintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vaesintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vpclmulqdqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/waitpkgintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/wbnoinvdintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/wmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/x86gprintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsavecintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsaveintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsaveoptintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsavesintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xtestintrin.h
+
+CMakeFiles/Raycaster.dir/src/renderer.c.o: /home/twhite/Projects/raycaster/src/renderer.c \
+  _deps/sdl2-build/include-config-/SDL2/SDL_config.h \
+  _deps/sdl2-build/include/SDL2/SDL.h \
+  _deps/sdl2-build/include/SDL2/SDL_assert.h \
+  _deps/sdl2-build/include/SDL2/SDL_atomic.h \
+  _deps/sdl2-build/include/SDL2/SDL_audio.h \
+  _deps/sdl2-build/include/SDL2/SDL_blendmode.h \
+  _deps/sdl2-build/include/SDL2/SDL_clipboard.h \
+  _deps/sdl2-build/include/SDL2/SDL_cpuinfo.h \
+  _deps/sdl2-build/include/SDL2/SDL_endian.h \
+  _deps/sdl2-build/include/SDL2/SDL_error.h \
+  _deps/sdl2-build/include/SDL2/SDL_events.h \
+  _deps/sdl2-build/include/SDL2/SDL_filesystem.h \
+  _deps/sdl2-build/include/SDL2/SDL_gamecontroller.h \
+  _deps/sdl2-build/include/SDL2/SDL_gesture.h \
+  _deps/sdl2-build/include/SDL2/SDL_guid.h \
+  _deps/sdl2-build/include/SDL2/SDL_haptic.h \
+  _deps/sdl2-build/include/SDL2/SDL_hidapi.h \
+  _deps/sdl2-build/include/SDL2/SDL_hints.h \
+  _deps/sdl2-build/include/SDL2/SDL_joystick.h \
+  _deps/sdl2-build/include/SDL2/SDL_keyboard.h \
+  _deps/sdl2-build/include/SDL2/SDL_keycode.h \
+  _deps/sdl2-build/include/SDL2/SDL_loadso.h \
+  _deps/sdl2-build/include/SDL2/SDL_locale.h \
+  _deps/sdl2-build/include/SDL2/SDL_log.h \
+  _deps/sdl2-build/include/SDL2/SDL_main.h \
+  _deps/sdl2-build/include/SDL2/SDL_messagebox.h \
+  _deps/sdl2-build/include/SDL2/SDL_metal.h \
+  _deps/sdl2-build/include/SDL2/SDL_misc.h \
+  _deps/sdl2-build/include/SDL2/SDL_mouse.h \
+  _deps/sdl2-build/include/SDL2/SDL_mutex.h \
+  _deps/sdl2-build/include/SDL2/SDL_pixels.h \
+  _deps/sdl2-build/include/SDL2/SDL_platform.h \
+  _deps/sdl2-build/include/SDL2/SDL_power.h \
+  _deps/sdl2-build/include/SDL2/SDL_quit.h \
+  _deps/sdl2-build/include/SDL2/SDL_rect.h \
+  _deps/sdl2-build/include/SDL2/SDL_render.h \
+  _deps/sdl2-build/include/SDL2/SDL_rwops.h \
+  _deps/sdl2-build/include/SDL2/SDL_scancode.h \
+  _deps/sdl2-build/include/SDL2/SDL_sensor.h \
+  _deps/sdl2-build/include/SDL2/SDL_shape.h \
+  _deps/sdl2-build/include/SDL2/SDL_stdinc.h \
+  _deps/sdl2-build/include/SDL2/SDL_surface.h \
+  _deps/sdl2-build/include/SDL2/SDL_system.h \
+  _deps/sdl2-build/include/SDL2/SDL_thread.h \
+  _deps/sdl2-build/include/SDL2/SDL_timer.h \
+  _deps/sdl2-build/include/SDL2/SDL_touch.h \
+  _deps/sdl2-build/include/SDL2/SDL_version.h \
+  _deps/sdl2-build/include/SDL2/SDL_video.h \
+  _deps/sdl2-build/include/SDL2/begin_code.h \
+  _deps/sdl2-build/include/SDL2/close_code.h \
+  /home/twhite/Projects/raycaster/include/renderer.h \
+  /home/twhite/Projects/raycaster/include/stb_image.h \
+  /home/twhite/Projects/raycaster/include/stb_image_resize2.h \
+  /usr/include/alloca.h \
+  /usr/include/assert.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthread_stack_min.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/once_flag.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/inttypes.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/adxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxavx512intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxbf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxcomplexintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxfp16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxfp8intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxint8intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxmovrsintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtf32intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtileintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtransposeintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512bf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512convertintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512mediaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512minmaxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512satcvtintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2bf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2convertintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2copyintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2mediaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2minmaxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2satcvtintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx2intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bitalgintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bitalgvlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bwintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512cdintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512dqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512ifmaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512ifmavlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmiintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmivlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlbwintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vldqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vnniintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vnnivlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vp2intersectintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vp2intersectvlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vpopcntdqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vpopcntdqvlintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxifmaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxneconvertintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniint16intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniint8intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxvnniintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/bmi2intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/bmiintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cetintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cldemoteintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clflushoptintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clwbintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clzerointrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/cmpccxaddintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/enqcmdintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/f16cintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fmaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fxsrintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/gfniintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/hresetintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/ia32intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/immintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/keylockerintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/lwpintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/lzcntintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movdirintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movrsintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mwaitxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pconfigintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pkuintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/popcntintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/prfchiintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/prfchwintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/raointintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/rdseedintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/rtmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/serializeintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sgxintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sha512intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/shaintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sm3intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/sm4intrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/smmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tbmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tsxldtrkintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/uintrintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/usermsrintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vaesintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vpclmulqdqintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/waitpkgintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/wbnoinvdintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/wmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/x86gprintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xmmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsavecintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsaveintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsaveoptintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsavesintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xtestintrin.h
+
+CMakeFiles/Raycaster.dir/src/tilemap.c.o: /home/twhite/Projects/raycaster/src/tilemap.c \
+  /home/twhite/Projects/raycaster/include/tilemap.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+
 Raycaster: /usr/lib/Scrt1.o \
   /usr/lib/crti.o \
   /usr/lib/crtn.o \
@@ -263,11 +807,18 @@ Raycaster: /usr/lib/Scrt1.o \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
   CMakeFiles/Raycaster.dir/src/main.c.o \
+  CMakeFiles/Raycaster.dir/src/player.c.o \
+  CMakeFiles/Raycaster.dir/src/renderer.c.o \
+  CMakeFiles/Raycaster.dir/src/tilemap.c.o \
   _deps/sdl2-build/libSDL2-2.0.so.0.3000.0 \
   _deps/sdl2-build/libSDL2main.a
 
 
 _deps/sdl2-build/libSDL2-2.0.so.0.3000.0:
+
+CMakeFiles/Raycaster.dir/src/renderer.c.o:
+
+CMakeFiles/Raycaster.dir/src/player.c.o:
 
 CMakeFiles/Raycaster.dir/src/main.c.o:
 
@@ -277,11 +828,31 @@ CMakeFiles/Raycaster.dir/src/main.c.o:
 
 /usr/lib/libc_nonshared.a:
 
-/usr/include/sys/types.h:
+/usr/lib/ld-linux-x86-64.so.2:
 
-_deps/sdl2-build/include/SDL2/SDL_platform.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
 
-/usr/include/strings.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
+
+/usr/lib/libm.so:
+
+/usr/lib/libgcc_s.so.1:
+
+CMakeFiles/Raycaster.dir/src/tilemap.c.o:
+
+/usr/lib/libgcc_s.so:
+
+/usr/lib/crtn.o:
+
+/usr/lib/crti.o:
+
+/usr/lib/Scrt1.o:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/limits.h:
 
 /usr/include/stdlib.h:
 
@@ -375,8 +946,6 @@ _deps/sdl2-build/include/SDL2/close_code.h:
 
 /usr/include/bits/iscanonical.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxmovrsintrin.h:
-
 /usr/include/bits/libm-simd-decl-stubs.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avxintrin.h:
@@ -387,31 +956,29 @@ _deps/sdl2-build/include/SDL2/SDL_thread.h:
 
 _deps/sdl2-build/include/SDL2/begin_code.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/types/wint_t.h:
+
+_deps/sdl2-build/include/SDL2/SDL_system.h:
+
+/usr/include/bits/pthread_stack_min.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vldqintrin.h:
+
 _deps/sdl2-build/include/SDL2/SDL.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vnniintrin.h:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxavx512intrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vlbwintrin.h:
 
-/usr/include/sys/cdefs.h:
-
-_deps/sdl2-build/include/SDL2/SDL_scancode.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
-
 /usr/include/bits/mathcalls-macros.h:
+
+/home/twhite/Projects/raycaster/include/stb_image_resize2.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2mediaintrin.h:
 
 _deps/sdl2-build/include/SDL2/SDL_keyboard.h:
-
-/usr/include/bits/types/once_flag.h:
-
-/usr/include/sys/select.h:
 
 /usr/include/bits/types/__sigset_t.h:
 
@@ -443,9 +1010,9 @@ _deps/sdl2-build/include/SDL2/SDL_loadso.h:
 
 _deps/sdl2-build/include/SDL2/SDL_gesture.h:
 
-_deps/sdl2-build/include/SDL2/SDL_hints.h:
+/usr/include/bits/floatn.h:
 
-/usr/include/wchar.h:
+_deps/sdl2-build/include/SDL2/SDL_gamecontroller.h:
 
 /usr/include/bits/types/__FILE.h:
 
@@ -515,8 +1082,6 @@ _deps/sdl2-build/include/SDL2/SDL_cpuinfo.h:
 
 /usr/include/bits/typesizes.h:
 
-/usr/lib/crti.o:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/vaesintrin.h:
 
 _deps/sdl2-build/include/SDL2/SDL_misc.h:
@@ -537,8 +1102,6 @@ _deps/sdl2-build/include/SDL2/SDL_mouse.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/fmaintrin.h:
 
-/usr/lib/Scrt1.o:
-
 /usr/include/bits/mathcalls-narrow.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xtestintrin.h:
@@ -553,6 +1116,10 @@ _deps/sdl2-build/include/SDL2/SDL_error.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tsxldtrkintrin.h:
 
+_deps/sdl2-build/include/SDL2/SDL_platform.h:
+
+/usr/include/sys/types.h:
+
 /usr/include/bits/types/__fpos64_t.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vp2intersectintrin.h:
@@ -564,6 +1131,8 @@ _deps/sdl2-build/include/SDL2/SDL_power.h:
 _deps/sdl2-build/include/SDL2/SDL_quit.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bf16intrin.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
 _deps/sdl2-build/include/SDL2/SDL_version.h:
 
@@ -585,23 +1154,39 @@ _deps/sdl2-build/include/SDL2/SDL_version.h:
 
 _deps/sdl2-build/include/SDL2/SDL_video.h:
 
+/usr/include/strings.h:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxavx512intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vnniintrin.h:
+
+/home/twhite/Projects/raycaster/include/renderer.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2bf16intrin.h:
+
+_deps/sdl2-build/include/SDL2/SDL_scancode.h:
+
+/usr/lib/libc.so.6:
+
+/home/twhite/Projects/raycaster/include/tilemap.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsaveintrin.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/clflushoptintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/ia32intrin.h:
 
-/usr/include/bits/types/wint_t.h:
-
-_deps/sdl2-build/include/SDL2/SDL_system.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vldqintrin.h:
+/usr/include/sys/cdefs.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/pmmintrin.h:
 
-/usr/include/bits/floatn-common.h:
+/home/twhite/Projects/raycaster/src/renderer.c:
 
-_deps/sdl2-build/include/SDL2/SDL_gamecontroller.h:
+/usr/include/bits/types/once_flag.h:
 
-/usr/include/bits/floatn.h:
+/usr/include/sys/select.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2minmaxintrin.h:
 
@@ -621,13 +1206,9 @@ _deps/sdl2-build/include/SDL2/SDL_gamecontroller.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtileintrin.h:
 
-/usr/lib/libgcc_s.so.1:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512convertintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512mediaintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2bf16intrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2convertintrin.h:
 
@@ -637,11 +1218,21 @@ _deps/sdl2-build/include/SDL2/SDL_gamecontroller.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx2intrin.h:
 
+/usr/include/bits/local_lim.h:
+
 /usr/include/bits/types/FILE.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bitalgintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bitalgvlintrin.h:
+
+/usr/lib/libc.so:
+
+/usr/include/bits/pthreadtypes.h:
+
+_deps/sdl2-build/include/SDL2/SDL_haptic.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bwintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512dqintrin.h:
 
@@ -656,8 +1247,6 @@ _deps/sdl2-build/include/SDL2/SDL_gamecontroller.h:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2intrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/tbmintrin.h:
-
-/usr/lib/crtn.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512vbmi2vlintrin.h:
 
@@ -711,7 +1300,15 @@ _deps/sdl2-build/include/SDL2/SDL_gamecontroller.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/enqcmdintrin.h:
 
+_deps/sdl2-build/include/SDL2/SDL_hints.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/posix1_lim.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h:
+
+/home/twhite/Projects/raycaster/include/player.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/immintrin.h:
 
@@ -729,13 +1326,13 @@ _deps/sdl2-build/include/SDL2/SDL_log.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/mmintrin.h:
 
-/usr/lib/libm.so:
-
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512fp16intrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movdirintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/movrsintrin.h:
+
+/home/twhite/Projects/raycaster/include/stb_image.h:
 
 /usr/include/bits/types/clock_t.h:
 
@@ -775,20 +1372,12 @@ _deps/sdl2-build/include/SDL2/SDL_hidapi.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/x86gprintrin.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/xsaveintrin.h:
+/home/twhite/Projects/raycaster/src/player.c:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/assert.h:
 
-_deps/sdl2-build/include/SDL2/SDL_haptic.h:
+/home/twhite/Projects/raycaster/src/tilemap.c:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx512bwintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxmovrsintrin.h:
 
-/usr/lib/libc.so:
-
-/usr/lib/libgcc_s.so:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/lib/libc.so.6:
+/usr/include/bits/posix2_lim.h:

@@ -1,5 +1,7 @@
-CMakeFiles/Raycaster.dir/src/main.c.o: \
- /home/twhite/Projects/raycaster/src/main.c /usr/include/stdc-predef.h \
+CMakeFiles/Raycaster.dir/src/renderer.c.o: \
+ /home/twhite/Projects/raycaster/src/renderer.c \
+ /usr/include/stdc-predef.h \
+ /home/twhite/Projects/raycaster/include/renderer.h \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL.h \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_main.h \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_stdinc.h \
@@ -210,6 +212,13 @@ CMakeFiles/Raycaster.dir/src/main.c.o: \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_version.h \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_locale.h \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_misc.h \
- /home/twhite/Projects/raycaster/include/player.h \
- /home/twhite/Projects/raycaster/include/renderer.h \
- /home/twhite/Projects/raycaster/include/tilemap.h
+ /home/twhite/Projects/raycaster/include/stb_image.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/pthread_stack_min-dynamic.h \
+ /usr/include/bits/pthread_stack_min.h /usr/include/bits/posix2_lim.h \
+ /usr/include/assert.h \
+ /home/twhite/Projects/raycaster/include/stb_image_resize2.h \
+ /home/twhite/Projects/raycaster/include/stb_image_resize2.h

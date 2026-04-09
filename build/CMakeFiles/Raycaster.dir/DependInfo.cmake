@@ -9,6 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/twhite/Projects/raycaster/src/main.c" "CMakeFiles/Raycaster.dir/src/main.c.o" "gcc" "CMakeFiles/Raycaster.dir/src/main.c.o.d"
+  "/home/twhite/Projects/raycaster/src/player.c" "CMakeFiles/Raycaster.dir/src/player.c.o" "gcc" "CMakeFiles/Raycaster.dir/src/player.c.o.d"
+  "/home/twhite/Projects/raycaster/src/renderer.c" "CMakeFiles/Raycaster.dir/src/renderer.c.o" "gcc" "CMakeFiles/Raycaster.dir/src/renderer.c.o.d"
+  "/home/twhite/Projects/raycaster/src/tilemap.c" "CMakeFiles/Raycaster.dir/src/tilemap.c.o" "gcc" "CMakeFiles/Raycaster.dir/src/tilemap.c.o.d"
   "" "Raycaster" "gcc" "CMakeFiles/Raycaster.dir/link.d"
   )
 

@@ -6,6 +6,24 @@
   "output": "CMakeFiles/Raycaster.dir/src/main.c.o"
 },
 {
+  "directory": "/home/twhite/Projects/raycaster/build",
+  "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/src -I/home/twhite/Projects/raycaster/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2  -o CMakeFiles/Raycaster.dir/src/player.c.o -c /home/twhite/Projects/raycaster/src/player.c",
+  "file": "/home/twhite/Projects/raycaster/src/player.c",
+  "output": "CMakeFiles/Raycaster.dir/src/player.c.o"
+},
+{
+  "directory": "/home/twhite/Projects/raycaster/build",
+  "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/src -I/home/twhite/Projects/raycaster/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2  -o CMakeFiles/Raycaster.dir/src/renderer.c.o -c /home/twhite/Projects/raycaster/src/renderer.c",
+  "file": "/home/twhite/Projects/raycaster/src/renderer.c",
+  "output": "CMakeFiles/Raycaster.dir/src/renderer.c.o"
+},
+{
+  "directory": "/home/twhite/Projects/raycaster/build",
+  "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/src -I/home/twhite/Projects/raycaster/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2  -o CMakeFiles/Raycaster.dir/src/tilemap.c.o -c /home/twhite/Projects/raycaster/src/tilemap.c",
+  "file": "/home/twhite/Projects/raycaster/src/tilemap.c",
+  "output": "CMakeFiles/Raycaster.dir/src/tilemap.c.o"
+},
+{
   "directory": "/home/twhite/Projects/raycaster/build/_deps/sdl2-build",
   "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include  -idirafter \"/home/twhite/Projects/raycaster/build/_deps/sdl2-src/src/video/khronos\" -DHAVE_LINUX_VERSION_H  -Wall -Wundef -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -Wno-unused-local-typedefs -mmmx -m3dnow -msse -msse2 -msse3  -isystem/usr/include -D_REENTRANT  -isystem/usr/include/libdrm  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=30 -DSDL_BUILD_MICRO_VERSION=0 -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -c /home/twhite/Projects/raycaster/build/_deps/sdl2-src/src/main/dummy/SDL_dummy_main.c",
   "file": "/home/twhite/Projects/raycaster/build/_deps/sdl2-src/src/main/dummy/SDL_dummy_main.c",

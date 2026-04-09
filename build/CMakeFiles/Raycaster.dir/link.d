@@ -3,6 +3,9 @@ Raycaster: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/Raycaster.dir/src/main.c.o \
+  CMakeFiles/Raycaster.dir/src/player.c.o \
+  CMakeFiles/Raycaster.dir/src/renderer.c.o \
+  CMakeFiles/Raycaster.dir/src/tilemap.c.o \
   _deps/sdl2-build/libSDL2-2.0.so.0.3000.0 \
   _deps/sdl2-build/libSDL2main.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libm.so \
@@ -39,6 +42,12 @@ Raycaster: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
 CMakeFiles/Raycaster.dir/src/main.c.o:
+
+CMakeFiles/Raycaster.dir/src/player.c.o:
+
+CMakeFiles/Raycaster.dir/src/renderer.c.o:
+
+CMakeFiles/Raycaster.dir/src/tilemap.c.o:
 
 _deps/sdl2-build/libSDL2-2.0.so.0.3000.0:
 
