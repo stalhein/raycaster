@@ -72,10 +72,24 @@ include CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/codegen:
 .PHONY : CMakeFiles/Raycaster.dir/codegen
 
+CMakeFiles/Raycaster.dir/src/lights.c.o: CMakeFiles/Raycaster.dir/flags.make
+CMakeFiles/Raycaster.dir/src/lights.c.o: /home/twhite/Projects/raycaster/src/lights.c
+CMakeFiles/Raycaster.dir/src/lights.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Raycaster.dir/src/lights.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/lights.c.o -MF CMakeFiles/Raycaster.dir/src/lights.c.o.d -o CMakeFiles/Raycaster.dir/src/lights.c.o -c /home/twhite/Projects/raycaster/src/lights.c
+
+CMakeFiles/Raycaster.dir/src/lights.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Raycaster.dir/src/lights.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/twhite/Projects/raycaster/src/lights.c > CMakeFiles/Raycaster.dir/src/lights.c.i
+
+CMakeFiles/Raycaster.dir/src/lights.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Raycaster.dir/src/lights.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/twhite/Projects/raycaster/src/lights.c -o CMakeFiles/Raycaster.dir/src/lights.c.s
+
 CMakeFiles/Raycaster.dir/src/main.c.o: CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/src/main.c.o: /home/twhite/Projects/raycaster/src/main.c
 CMakeFiles/Raycaster.dir/src/main.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Raycaster.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Raycaster.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/main.c.o -MF CMakeFiles/Raycaster.dir/src/main.c.o.d -o CMakeFiles/Raycaster.dir/src/main.c.o -c /home/twhite/Projects/raycaster/src/main.c
 
 CMakeFiles/Raycaster.dir/src/main.c.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/Raycaster.dir/src/main.c.s: cmake_force
 CMakeFiles/Raycaster.dir/src/player.c.o: CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/src/player.c.o: /home/twhite/Projects/raycaster/src/player.c
 CMakeFiles/Raycaster.dir/src/player.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Raycaster.dir/src/player.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Raycaster.dir/src/player.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/player.c.o -MF CMakeFiles/Raycaster.dir/src/player.c.o.d -o CMakeFiles/Raycaster.dir/src/player.c.o -c /home/twhite/Projects/raycaster/src/player.c
 
 CMakeFiles/Raycaster.dir/src/player.c.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/Raycaster.dir/src/player.c.s: cmake_force
 CMakeFiles/Raycaster.dir/src/renderer.c.o: CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/src/renderer.c.o: /home/twhite/Projects/raycaster/src/renderer.c
 CMakeFiles/Raycaster.dir/src/renderer.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Raycaster.dir/src/renderer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Raycaster.dir/src/renderer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/renderer.c.o -MF CMakeFiles/Raycaster.dir/src/renderer.c.o.d -o CMakeFiles/Raycaster.dir/src/renderer.c.o -c /home/twhite/Projects/raycaster/src/renderer.c
 
 CMakeFiles/Raycaster.dir/src/renderer.c.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/Raycaster.dir/src/renderer.c.s: cmake_force
 CMakeFiles/Raycaster.dir/src/tilemap.c.o: CMakeFiles/Raycaster.dir/flags.make
 CMakeFiles/Raycaster.dir/src/tilemap.c.o: /home/twhite/Projects/raycaster/src/tilemap.c
 CMakeFiles/Raycaster.dir/src/tilemap.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Raycaster.dir/src/tilemap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Raycaster.dir/src/tilemap.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/tilemap.c.o -MF CMakeFiles/Raycaster.dir/src/tilemap.c.o.d -o CMakeFiles/Raycaster.dir/src/tilemap.c.o -c /home/twhite/Projects/raycaster/src/tilemap.c
 
 CMakeFiles/Raycaster.dir/src/tilemap.c.i: cmake_force
@@ -128,26 +142,44 @@ CMakeFiles/Raycaster.dir/src/tilemap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Raycaster.dir/src/tilemap.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/twhite/Projects/raycaster/src/tilemap.c -o CMakeFiles/Raycaster.dir/src/tilemap.c.s
 
+CMakeFiles/Raycaster.dir/src/world.c.o: CMakeFiles/Raycaster.dir/flags.make
+CMakeFiles/Raycaster.dir/src/world.c.o: /home/twhite/Projects/raycaster/src/world.c
+CMakeFiles/Raycaster.dir/src/world.c.o: CMakeFiles/Raycaster.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Raycaster.dir/src/world.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Raycaster.dir/src/world.c.o -MF CMakeFiles/Raycaster.dir/src/world.c.o.d -o CMakeFiles/Raycaster.dir/src/world.c.o -c /home/twhite/Projects/raycaster/src/world.c
+
+CMakeFiles/Raycaster.dir/src/world.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Raycaster.dir/src/world.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/twhite/Projects/raycaster/src/world.c > CMakeFiles/Raycaster.dir/src/world.c.i
+
+CMakeFiles/Raycaster.dir/src/world.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Raycaster.dir/src/world.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/twhite/Projects/raycaster/src/world.c -o CMakeFiles/Raycaster.dir/src/world.c.s
+
 # Object files for target Raycaster
 Raycaster_OBJECTS = \
+"CMakeFiles/Raycaster.dir/src/lights.c.o" \
 "CMakeFiles/Raycaster.dir/src/main.c.o" \
 "CMakeFiles/Raycaster.dir/src/player.c.o" \
 "CMakeFiles/Raycaster.dir/src/renderer.c.o" \
-"CMakeFiles/Raycaster.dir/src/tilemap.c.o"
+"CMakeFiles/Raycaster.dir/src/tilemap.c.o" \
+"CMakeFiles/Raycaster.dir/src/world.c.o"
 
 # External object files for target Raycaster
 Raycaster_EXTERNAL_OBJECTS =
 
+Raycaster: CMakeFiles/Raycaster.dir/src/lights.c.o
 Raycaster: CMakeFiles/Raycaster.dir/src/main.c.o
 Raycaster: CMakeFiles/Raycaster.dir/src/player.c.o
 Raycaster: CMakeFiles/Raycaster.dir/src/renderer.c.o
 Raycaster: CMakeFiles/Raycaster.dir/src/tilemap.c.o
+Raycaster: CMakeFiles/Raycaster.dir/src/world.c.o
 Raycaster: CMakeFiles/Raycaster.dir/build.make
 Raycaster: CMakeFiles/Raycaster.dir/compiler_depend.ts
 Raycaster: _deps/sdl2-build/libSDL2-2.0.so.0.3000.0
 Raycaster: _deps/sdl2-build/libSDL2main.a
 Raycaster: CMakeFiles/Raycaster.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable Raycaster"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/twhite/Projects/raycaster/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Raycaster"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Raycaster.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

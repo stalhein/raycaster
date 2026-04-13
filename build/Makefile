@@ -220,6 +220,30 @@ uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/sdl2-build/CMakeFiles/uninstall.dir/build.make _deps/sdl2-build/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/lights.o: src/lights.c.o
+.PHONY : src/lights.o
+
+# target to build an object file
+src/lights.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/lights.c.o
+.PHONY : src/lights.c.o
+
+src/lights.i: src/lights.c.i
+.PHONY : src/lights.i
+
+# target to preprocess a source file
+src/lights.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/lights.c.i
+.PHONY : src/lights.c.i
+
+src/lights.s: src/lights.c.s
+.PHONY : src/lights.s
+
+# target to generate assembly for a file
+src/lights.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/lights.c.s
+.PHONY : src/lights.c.s
+
 src/main.o: src/main.c.o
 .PHONY : src/main.o
 
@@ -316,6 +340,30 @@ src/tilemap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/tilemap.c.s
 .PHONY : src/tilemap.c.s
 
+src/world.o: src/world.c.o
+.PHONY : src/world.o
+
+# target to build an object file
+src/world.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/world.c.o
+.PHONY : src/world.c.o
+
+src/world.i: src/world.c.i
+.PHONY : src/world.i
+
+# target to preprocess a source file
+src/world.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/world.c.i
+.PHONY : src/world.c.i
+
+src/world.s: src/world.c.s
+.PHONY : src/world.s
+
+# target to generate assembly for a file
+src/world.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Raycaster.dir/build.make CMakeFiles/Raycaster.dir/src/world.c.s
+.PHONY : src/world.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -332,6 +380,9 @@ help:
 	@echo "... SDL2-static"
 	@echo "... SDL2_test"
 	@echo "... SDL2main"
+	@echo "... src/lights.o"
+	@echo "... src/lights.i"
+	@echo "... src/lights.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -344,6 +395,9 @@ help:
 	@echo "... src/tilemap.o"
 	@echo "... src/tilemap.i"
 	@echo "... src/tilemap.s"
+	@echo "... src/world.o"
+	@echo "... src/world.i"
+	@echo "... src/world.s"
 .PHONY : help
 
 

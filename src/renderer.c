@@ -6,29 +6,14 @@
 #include "stb_image.h"
 #include "stb_image_resize2.h"
 
-Renderer *renderer_create() {
+Renderer *renderer_create(SDL_Window* window) {
   Renderer *r = malloc(sizeof(Renderer));
-
-  if (SDL_Init(SDL_INIT_VIDEO) < 0) {
-    printf("Could not initialize SDL2\n%c\n", SDL_GetError());
-    return NULL;
-  }
-
-  r->window = SDL_CreateWindow("Raycaster", SDL_WINDOWPOS_UNDEFINED,
-                               SDL_WINDOWPOS_UNDEFINED, SCR_WIDTH, SCR_HEIGHT,
-                               SDL_WINDOW_SHOWN);
-  if (!r->window) {
-    printf("Could not create window\n%c\n", SDL_GetError());
-    SDL_Quit();
-    return NULL;
-  }
 
   SDL_SetRelativeMouseMode(SDL_TRUE);
 
-  r->renderer = SDL_CreateRenderer(r->window, -1, SDL_RENDERER_PRESENTVSYNC);
+  r->renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_PRESENTVSYNC);
   if (!r->renderer) {
     printf("Could not create renderer\n%c\n", SDL_GetError());
-    SDL_DestroyWindow(r->window);
     SDL_Quit();
     return NULL;
   }
@@ -58,7 +43,6 @@ void renderer_update(Renderer *r) {
 void renderer_destroy(Renderer *r) {
   SDL_DestroyTexture(r->texture);
   SDL_DestroyRenderer(r->renderer);
-  SDL_DestroyWindow(r->window);
   SDL_Quit();
   free(r->buffer);
   free(r);

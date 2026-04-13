@@ -3,30 +3,26 @@
 #include <math.h>
 #include <stdio.h>
 
-#include "player.h"
-#include "renderer.h"
-#include "tilemap.h"
+#include "world.h"
 
-#define FLOORSCALE 64.f
-#define MOUSE_SENSITIVITY 0.006f
+#define FLOORSCALE 32.f
 
 int main() {
-  Renderer *renderer = renderer_create();
-  if (!renderer) {
+  if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+    printf("Could not initialize SDL2\n%c\n", SDL_GetError());
     return 1;
   }
 
-  Texture *wallTexture = texture_load("assets/wall5.png", 64, 64);
-  Texture *floorTexture = texture_load("assets/floor3.png", 64, 64);
-  Texture *ceilingTexture = texture_load("assets/ceiling.png", 64, 64);
-  if (!wallTexture || !floorTexture || !ceilingTexture) {
-    printf("Failed to load textures.");
+  SDL_Window *window = SDL_CreateWindow("Raycaster", SDL_WINDOWPOS_UNDEFINED,
+                                        SDL_WINDOWPOS_UNDEFINED, SCR_WIDTH,
+                                        SCR_HEIGHT, SDL_WINDOW_SHOWN);
+  if (!window) {
+    printf("Could not create window\n%c\n", SDL_GetError());
+    SDL_Quit();
     return 1;
   }
 
-  Player player = {100.f, 100.f, 0.f, 0.f, 0.f};
-
-  Tilemap *tilemap = tilemap_create("worlds/1.wld");
+  World *world = world_init(window, "worlds/1.wld");
 
   // Main loop
   SDL_Event event;
@@ -39,7 +35,7 @@ int main() {
         (float)(now - last) * 1000.f / SDL_GetPerformanceFrequency() * 0.001f;
     last = now;
 
-    //printf("FPS: %f\n", 1000/deltaTime);
+    printf("FPS: %f\n", 1000 / deltaTime);
 
     while (SDL_PollEvent(&event)) {
       if (event.type == SDL_QUIT) {
@@ -49,98 +45,19 @@ int main() {
           running = 0;
         }
       } else if (event.type == SDL_MOUSEMOTION) {
-        player.angle += event.motion.xrel * MOUSE_SENSITIVITY;
-
-        if (player.angle > 2 * M_PI) player.angle -= 2 * M_PI;
-        else if (player.angle < 0) player.angle += 2 * M_PI;
+        world_process_mouse(world, &event);
       }
     }
 
-    player_update(&player, deltaTime, tilemap);
+    world_update(world, deltaTime);
 
-    renderer_clear(renderer);
-
-    float dirX = cos(player.angle);
-    float dirY = sin(player.angle);
-    float planeX = -dirY * tan(FOV / 2.f);
-    float planeY = dirX * tan(FOV / 2.f);
-
-    // Floor
-    float x0 = dirX - planeX;
-    float y0 = dirY - planeY;
-    float x1 = dirX + planeX;
-    float y1 = dirY + planeY;
-
-    const int horizon = SCR_HEIGHT / 2;
-    for (int y = horizon + 1; y < SCR_HEIGHT; ++y) {
-      float distance = (float)SCR_HEIGHT / (2.f * y - SCR_HEIGHT);
-
-      distance *= TILE_SIZE;
-
-      float sX = distance * (x1 - x0) / SCR_WIDTH;
-      float sY = distance * (y1 - y0) / SCR_WIDTH;
-
-      float floorX = player.x + distance * x0;
-      float floorY = player.y + distance * y0;
-
-      for (int x = 0; x < SCR_WIDTH; ++x) {
-        float scaledX = floorX / FLOORSCALE;
-        float scaledY = floorY / FLOORSCALE;
-
-        scaledX -= floorf(scaledX);
-        scaledY -= floorf(scaledY);
-
-        int textureX = ((int)(scaledX * floorTexture->width));
-        int textureY = ((int)(scaledY * floorTexture->height));
-
-        if (textureX < 0)
-          textureX = 0;
-        if (textureY < 0)
-          textureY = 0;
-
-        textureX %= floorTexture->width;
-        textureY %= floorTexture->height;
-
-        float shade = 1.f / (1.f+distance * 0.007f);
-        Uint32 colour = floorTexture->texture[textureY * floorTexture->width + textureX];
-        Uint8 cr = ((colour >> 16) & 0xFF) * shade;
-        Uint8 cg = ((colour >> 8) & 0xFF) * shade;
-        Uint8 cb = (colour & 0xFF) * shade;
-        colour = (cr << 16) | (cg << 8) | cb;
-
-        renderer->buffer[y * SCR_WIDTH + x] = colour;
-
-        int ceilingY = SCR_HEIGHT - y-1;
-
-        colour = ceilingTexture->texture[textureY * ceilingTexture->width + textureX];
-        cr = ((colour >> 16) & 0xFF) * shade;
-        cg = ((colour >> 8) & 0xFF) * shade;
-        cb = (colour & 0xFF) * shade;
-        colour = (cr << 16) | (cg << 8) | cb;
-        renderer->buffer[ceilingY * SCR_WIDTH + x] = colour;
-
-        floorX += sX;
-        floorY += sY;
-      }
-    }
-
-    // Walls
-    for (int i = 0; i < SCR_WIDTH; ++i) {
-      float x = 2.f * i / (float)SCR_WIDTH - 1.f;
-      float dx = dirX + planeX * x;
-      float dy = dirY + planeY * x;
-      Hit hit = raycast(tilemap, player.x, player.y, dx, dy);
-      renderer_draw_column(renderer, i, hit.distance, hit.wallDist,
-                           wallTexture, hit.side);
-    }
-
-    renderer_update(renderer);
+    world_render(world);
   }
 
-  texture_destroy(wallTexture);
-  texture_destroy(floorTexture);
-  texture_destroy(ceilingTexture);
-  renderer_destroy(renderer);
+  world_destroy(world);
+
+  SDL_DestroyWindow(window);
+  SDL_Quit();
 
   return 0;
 }

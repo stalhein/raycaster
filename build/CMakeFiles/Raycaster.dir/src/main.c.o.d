@@ -210,7 +210,9 @@ CMakeFiles/Raycaster.dir/src/main.c.o: \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_version.h \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_locale.h \
  /home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2/SDL_misc.h \
+ /home/twhite/Projects/raycaster/include/world.h \
+ /home/twhite/Projects/raycaster/include/lights.h \
  /home/twhite/Projects/raycaster/include/player.h \
  /home/twhite/Projects/raycaster/include/tilemap.h \
  /home/twhite/Projects/raycaster/include/renderer.h \
- /home/twhite/Projects/raycaster/include/tilemap.h
+ /home/twhite/Projects/raycaster/include/settings.h

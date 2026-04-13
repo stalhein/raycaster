@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/twhite/Projects/raycaster/build",
+  "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/src -I/home/twhite/Projects/raycaster/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2  -o CMakeFiles/Raycaster.dir/src/lights.c.o -c /home/twhite/Projects/raycaster/src/lights.c",
+  "file": "/home/twhite/Projects/raycaster/src/lights.c",
+  "output": "CMakeFiles/Raycaster.dir/src/lights.c.o"
+},
+{
+  "directory": "/home/twhite/Projects/raycaster/build",
   "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/src -I/home/twhite/Projects/raycaster/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2  -o CMakeFiles/Raycaster.dir/src/main.c.o -c /home/twhite/Projects/raycaster/src/main.c",
   "file": "/home/twhite/Projects/raycaster/src/main.c",
   "output": "CMakeFiles/Raycaster.dir/src/main.c.o"
@@ -22,6 +28,12 @@
   "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/src -I/home/twhite/Projects/raycaster/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2  -o CMakeFiles/Raycaster.dir/src/tilemap.c.o -c /home/twhite/Projects/raycaster/src/tilemap.c",
   "file": "/home/twhite/Projects/raycaster/src/tilemap.c",
   "output": "CMakeFiles/Raycaster.dir/src/tilemap.c.o"
+},
+{
+  "directory": "/home/twhite/Projects/raycaster/build",
+  "command": "/usr/bin/cc  -I/home/twhite/Projects/raycaster/src -I/home/twhite/Projects/raycaster/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include/SDL2 -I/home/twhite/Projects/raycaster/build/_deps/sdl2-build/include-config-/SDL2  -o CMakeFiles/Raycaster.dir/src/world.c.o -c /home/twhite/Projects/raycaster/src/world.c",
+  "file": "/home/twhite/Projects/raycaster/src/world.c",
+  "output": "CMakeFiles/Raycaster.dir/src/world.c.o"
 },
 {
   "directory": "/home/twhite/Projects/raycaster/build/_deps/sdl2-build",
